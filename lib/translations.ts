@@ -1,0 +1,76 @@
+export type Language = 'en' | 'hi';
+
+export const translations = {
+  en: {
+    siteName: 'FRA Digital Platform',
+    skipToMain: 'Skip to main content',
+    navigation: {
+      home: 'Home',
+      dashboard: 'Dashboard',
+      archive: 'FRA Archive',
+      atlas: 'Atlas',
+      dss: 'DSS Reports',
+      validation: 'Validation',
+      feedback: 'Feedback',
+    },
+    accessibility: {
+      highContrast: 'High Contrast',
+      textSize: 'Text Size',
+      language: 'Language',
+    },
+    footer: {
+      accessibility: 'Accessibility Statement',
+      contact: 'Contact',
+      lastUpdated: 'Last Updated',
+      ministry: 'Ministry of Tribal Affairs',
+    },
+    common: {
+      submit: 'Submit',
+      cancel: 'Cancel',
+      search: 'Search',
+      filter: 'Filter',
+      export: 'Export',
+      download: 'Download',
+      viewDetails: 'View Details',
+      approve: 'Approve',
+      flag: 'Flag',
+      loading: 'Loading...',
+    },
+  },
+  hi: {
+    siteName: 'वन अधिकार डिजिटल मंच',
+    skipToMain: 'मुख्य सामग्री पर जाएं',
+    navigation: {
+      home: 'होम',
+      dashboard: 'डैशबोर्ड',
+      archive: 'एफआरए अभिलेख',
+      atlas: 'एटलस',
+      dss: 'डीएसएस रिपोर्ट',
+      validation: 'सत्यापन',
+      feedback: 'फीडबैक',
+    },
+    accessibility: {
+      highContrast: 'उच्च कंट्रास्ट',
+      textSize: 'पाठ का आकार',
+      language: 'भाषा',
+    },
+    footer: {
+      accessibility: 'सुलभता कथन',
+      contact: 'संपर्क',
+      lastUpdated: 'अंतिम अद्यतन',
+      ministry: 'जनजातीय मामलों का मंत्रालय',
+    },
+    common: {
+      submit: 'जमा करें',
+      cancel: 'रद्द करें',
+      search: 'खोजें',
+      filter: 'फ़िल्टर',
+      export: 'निर्यात',
+      download: 'डाउनलोड',
+      viewDetails: 'विवरण देखें',
+      approve: 'स्वीकृत करें',
+      flag: 'फ्लैग करें',
+      loading: 'लोड हो रहा है...',
+    },
+  },
+};
