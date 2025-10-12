@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Lake 1" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.85, 20.45],
+            [85.87, 20.45],
+            [85.87, 20.47],
+            [85.85, 20.47],
+            [85.85, 20.45]
+          ]
+        ]
+      }
+    }
+  ]
+}

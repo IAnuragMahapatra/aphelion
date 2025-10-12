@@ -1,0 +1,13 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Settlement 1" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.82, 20.42]
+      }
+    }
+  ]
+}
