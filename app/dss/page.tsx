@@ -200,7 +200,7 @@ export default function DSS() {
               size="lg"
               onClick={handleGenerate}
               disabled={!selectedDistrict || !selectedBlock || !selectedVillage}
-              className="w-full md:w-auto"
+              className="w-full md:w-auto flex items-center justify-center gap-2"
             >
               <FileText className="w-5 h-5 mr-2" aria-hidden="true" />
               {t.generateReport}

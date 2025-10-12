@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Forest Area 1" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.83, 20.43],
+            [85.86, 20.43],
+            [85.86, 20.46],
+            [85.83, 20.46],
+            [85.83, 20.43]
+          ]
+        ]
+      }
+    }
+  ]
+}

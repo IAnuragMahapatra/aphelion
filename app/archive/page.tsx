@@ -214,7 +214,7 @@ export default function Archive() {
               </div>
 
               <div className="flex items-end">
-                <GovButton variant="success" className="w-full" onClick={handleExport}>
+                <GovButton variant="success" className="w-full flex justify-center gap-4 items-center" onClick={handleExport}>
                   <Download className="w-4 h-4 mr-2" aria-hidden="true" />
                   {t.export}
                 </GovButton>

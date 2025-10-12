@@ -1,4 +1,5 @@
 import './globals.css';
+import "leaflet/dist/leaflet.css";
 import type { Metadata } from 'next';
 import { LanguageProvider } from '@/lib/LanguageContext';
 import { Header } from '@/components/layout/Header';

@@ -158,10 +158,10 @@ export default function Dashboard() {
 
           <GovCard>
             <h2 className="text-2xl font-bold text-primary mb-6">{t.quickActions}</h2>
-            <div className="space-y-4">
+            <div className="space-y-4 ">
               <GovButton
                 variant="primary"
-                className="w-full justify-start"
+                className="w-full  flex justify-center items-center gap-4 h-16"
                 onClick={() => alert(language === 'en' ? 'Generating PDF report...' : 'पीडीएफ रिपोर्ट तैयार की जा रही है...')}
               >
                 <Download className="w-5 h-5 mr-2" aria-hidden="true" />
@@ -169,7 +169,7 @@ export default function Dashboard() {
               </GovButton>
               <GovButton
                 variant="success"
-                className="w-full justify-start"
+                className="w-full  flex justify-center items-center gap-4 h-16"
                 onClick={() => alert(language === 'en' ? 'Exporting CSV data...' : 'सीएसवी डेटा निर्यात किया जा रहा है...')}
               >
                 <FileSpreadsheet className="w-5 h-5 mr-2" aria-hidden="true" />
@@ -177,7 +177,7 @@ export default function Dashboard() {
               </GovButton>
               <GovButton
                 variant="outline"
-                className="w-full justify-start"
+                className="w-full  flex justify-center items-center gap-4 h-16"
                 onClick={() => window.location.href = '/archive'}
               >
                 <MapPin className="w-5 h-5 mr-2" aria-hidden="true" />
