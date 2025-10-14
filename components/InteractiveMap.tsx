@@ -10,7 +10,22 @@ import settlements from "../app/data/settlements.json";
 import waterBodies from "../app/data/waterBodies.json";
 import forest from "../app/data/forest.json";
 
+import L from "leaflet";
+
+// Fix: override default marker icons safely with empty transparent image
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl:
+    "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",
+  iconUrl:
+    "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",
+  shadowUrl:
+    "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",
+});
+
+
+
 const { BaseLayer } = LayersControl;
+
 
 interface InteractiveMapProps {
   layers: {
@@ -23,13 +38,13 @@ interface InteractiveMapProps {
 }
 
 export default function InteractiveMap({ layers }: InteractiveMapProps) {
-  const center: LatLngExpression = [20.2961, 85.8245]; // Odisha
+  const center: LatLngExpression = [20.4625, 85.8828]; // Odisha
 
   return (
     <div className="w-full h-[90vh] rounded-2xl overflow-hidden shadow-lg">
       <MapContainer
         center={center}
-        zoom={7}
+        zoom={12}
         scrollWheelZoom={true}
         className="w-full h-full"
         style={{ height: "100%", width: "100%" }}
@@ -53,7 +68,12 @@ export default function InteractiveMap({ layers }: InteractiveMapProps) {
 
         {/* Conditional layers */}
         {layers.agriculture && (
-          <GeoJSON data={agriculture as GeoJsonObject} style={{ color: "#a3d977" }} />
+          <GeoJSON data={agriculture as GeoJsonObject} style={{
+    color: "#1E90FF",       
+    weight: 2,              
+    fillColor: "#1E90FF",   
+    fillOpacity: 0.4,       
+  }} />
         )}
         {layers.settlement && (
           <GeoJSON data={settlements as GeoJsonObject} style={{ color: "#ff7f50" }} />
