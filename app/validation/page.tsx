@@ -127,28 +127,30 @@ export default function Validation() {
           <p className="text-sm text-gray-700">{t.instructions}</p>
         </div>
 
-        <GovCard className="mb-6">
-          <div className="relative h-64 bg-gradient-to-br from-green-100 to-blue-100 rounded-lg mb-4 overflow-hidden">
-            <div className="absolute inset-0 opacity-20">
-              <svg viewBox="0 0 200 200" className="w-full h-full">
-                <pattern id="grid-validation" width="20" height="20" patternUnits="userSpaceOnUse">
-                  <path d="M 20 0 L 0 0 0 20" fill="none" stroke="green" strokeWidth="0.5" />
-                </pattern>
-                <rect width="100%" height="100%" fill="url(#grid-validation)" />
-              </svg>
-            </div>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center text-gray-600">
-                <p className="text-sm font-semibold">
-                  {language === 'en' ? 'Map Snapshot' : 'मानचित्र स्नैपशॉट'}
-                </p>
-                <p className="text-xs mt-1">
-                  {language === 'en' ? 'Satellite imagery of claim area' : 'दावा क्षेत्र की उपग्रह छवि'}
-                </p>
-              </div>
-            </div>
-          </div>
-        </GovCard>
+    <GovCard className="mb-6">
+  <div className="relative h-64 sm:h-80 md:h-96 lg:h-[28rem] xl:h-[32rem] bg-gradient-to-br from-green-100 to-blue-100 rounded-lg mb-4 overflow-hidden">
+    <div className="absolute inset-0 opacity-20 z-10">
+      <svg viewBox="0 0 200 200" className="w-full h-full">
+        <pattern id="grid-validation" width="20" height="20" patternUnits="userSpaceOnUse">
+          <path d="M 20 0 L 0 0 0 20" fill="none" stroke="green" strokeWidth="0.5" />
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#grid-validation)" />
+      </svg>
+    </div>
+
+    <img
+      src="/satellite.png"
+      alt="Satellite"
+      className="absolute inset-0 w-full h-full object-cover z-0"
+    />
+
+    <div className="absolute inset-0 flex items-center justify-center z-20">
+      <div className="text-center text-gray-600">
+      </div>
+    </div>
+  </div>
+</GovCard>
+
 
         <GovCard className="mb-6">
           <h2 className="text-2xl font-bold text-primary mb-6">{t.assetList}</h2>
